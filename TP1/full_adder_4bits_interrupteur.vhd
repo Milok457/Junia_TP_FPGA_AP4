@@ -16,6 +16,12 @@ end entity full_adder_4bits_interrupteur;
 architecture behavioral of full_adder_4bits_interrupteur is
 -- (Optionnel) Ecrire ici la déclaration de signaux
 -- ex. signal X : std_logic;
+signal A : std_logic_vector(3 downto 0);	-- Signal pour l'opérande A
+signal B : std_logic_vector(3 downto 0);	-- Signal pour l'opérande B
+signal Cin : std_logic;						-- Signal pour la retenue entrante
+signal S : std_logic_vector(3 downto 0);	-- Signal pour la somme
+signal Cout : std_logic;					-- Signal pour la retenue sortante
+
 begin
     -- Ecrire ici les instructions cocurrentes décrivant le comportement de l'entity
 	-- ex. X <= not(A);
