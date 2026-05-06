@@ -3,10 +3,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 -- DECLARATION D'UNE ENTITE
-entity testbench_flipflop_JK_ascn is
-end testbench_flipflop_JK_ascn;
+entity tb_flipflop_JK_ascn is
+end tb_flipflop_JK_ascn;
 
-architecture tb of testbench_flipflop_JK_ascn is
+architecture tb of tb_flipflop_JK_ascn is
     -- Déclaration des signaux de test
 	-- ex. signal A, S: std_logic;
 	signal J : std_logic := '0';
