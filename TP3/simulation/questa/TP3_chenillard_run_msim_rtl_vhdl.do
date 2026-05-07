@@ -50,12 +50,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP2/shift_register_universal8.vhd}
-vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP2/toplevel.vhd}
+vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP3/chenillard.vhd}
+vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP3/clock_divider.vhd}
+vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP3/toplevel.vhd}
 
-vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP2/tb_shift_register_universal8.vhd}
+vcom -93 -work work {C:/Users/dibla/Documents/Junia/AP4/FPGA/TP/Junia_TP_FPGA_AP4/TP3/tb_chenillard.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  tb_shift_register_universal8
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  tb_chenillard
 
 add wave *
 view structure
